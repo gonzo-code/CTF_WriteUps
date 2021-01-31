@@ -1,7 +1,5 @@
 # BugDB v3
 
-
-
 This is a cool CTF that illustrates how GraphQL can be used for arbitary file reading. 
 
 Essentially the main vulnerability here is that the API does not restrict users from accessing file systems outside what they actually need - which is what will allow us to read senstive data from the database!!!
@@ -45,11 +43,7 @@ query{
 
 ![](./imgs/query.jpg)
 
-
-
 Important things to note are that their are 2 users, they have uploaded attachments, and these attachments have an ID.
-
-
 
 ### ### Mutations
 
@@ -89,8 +83,6 @@ mutation{
 
 ![](./imgs/modifyAttachment.jpg)
 
-
-
 ![](./imgs/filename.jpg)
 
 Go read the attachment again.
@@ -98,8 +90,6 @@ Go read the attachment again.
 http://127.0.0.1/xxxxxxxxxx/attachments/1
 
 ![](./imgs/main.jpg)
-
-
 
 We get the whole [main.py](./main.py) file!!!!!
 
